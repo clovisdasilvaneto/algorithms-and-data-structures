@@ -19,6 +19,7 @@ const getMinWindow = (s, t) => {
     // moves right pointer
     while(right < s.length) {
         const rightLetter = s[right];
+        console.log(minWindowLength === frequenceMap.size)
 
         if(frequenceMap.has(rightLetter)) {
             frequenceMap.set(rightLetter, frequenceMap.get(rightLetter) - 1);
@@ -43,6 +44,9 @@ const getMinWindow = (s, t) => {
                 if(frequenceMap.get(leftLetter) > 0) counter++;
             }
 
+            // leave all the loops in case the it is equal or less than the reference mapper
+            if(minWindowLength <= frequenceMap.size) right = s.length;
+            
             left++;
         }
     }
@@ -50,9 +54,9 @@ const getMinWindow = (s, t) => {
     return minWindow;
 }
 
-const str = "ADOBECODEBANC"
+const str = "OABAACBAB"
 const reference = "ABC"
 
 const result = getMinWindow(str, reference);
 
-console.log();
+console.log(`The smallest desirable window is ${result}`);
