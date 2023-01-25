@@ -9,4 +9,4 @@
 Most of these techniques bellow can be used for arrays and also string problems, because a string is pretty much an array of characters.
 
 ### Sliding Window
-Applies to many subarray/substring problems. It has two pointers which usually moves in the same direction and will never overtake each other. This ensures that each value will be only visited at most twice AND the time complexty will still be O(n)! EVEN HAVING A NESTED LOOP IT WILL BE O(M+N) === O(N).
+Applies to many subarray/substring problems. It has two pointers which usually moves in the same direction and will never overtake each other. This ensures that each value will be only visited at most twice AND the time complexty will still be O(n)! **EVEN HAVING A NESTED LOOP IT WILL BE O(M+N) === O(N)**.
