@@ -21,6 +21,6 @@ var minSubArrayLen = function(target, nums) {
     return min != Infinity ? min : 0
 };
 
-let tar = 7;
-let input = [2,3,1,2,4,3];
+const tar = 7;
+const input = [2,3,1,2,4,3];
 console.log(`The minimun length of ${input} is ${minSubArrayLen(tar, input)}`);
