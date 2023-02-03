@@ -3,6 +3,8 @@
  * @param {number} k
  * @param {number} threshold
  * @return {number}
+ * 
+ * Time complexty: O(N)
  */
 var numOfSubarrays = function(arr, k, threshold) {
   let sum = 0;
