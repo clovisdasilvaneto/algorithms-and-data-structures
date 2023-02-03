@@ -1,6 +1,8 @@
 /**
  * @param {number[]} nums
  * @return {number}
+ * 
+ * Time complexty: O(N)
  */
 var longestSubarray = function(nums) {
     let [right, left, total] = [0,0,0];

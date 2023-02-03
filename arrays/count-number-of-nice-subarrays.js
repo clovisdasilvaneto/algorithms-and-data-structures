@@ -2,6 +2,8 @@
  * @param {number[]} nums
  * @param {number} k
  * @return {number}
+ * 
+ * Time complexty: O(N)
  */
 var numberOfSubarrays = function(nums, k) {
     let [left, right, total] = [0, 0, 0];

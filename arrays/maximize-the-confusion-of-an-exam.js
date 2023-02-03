@@ -30,6 +30,8 @@ Statements
  * @param {string} answerKey
  * @param {number} k
  * @return {number}
+ * 
+ * Time complexty: O(N)
  */
 var maxConsecutiveAnswers = function(answerKey, k) {
     let totalT = getConsecutivesByTarget("T", answerKey, k)

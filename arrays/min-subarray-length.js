@@ -2,6 +2,8 @@
  * @param {number} target
  * @param {number[]} nums
  * @return {number}
+ * 
+ * Time complexty: O(N)
  */
 var minSubArrayLen = function(target, nums) {
     let [left, sum] = [0, 0];

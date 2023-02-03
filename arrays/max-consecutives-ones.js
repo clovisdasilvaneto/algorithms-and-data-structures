@@ -2,6 +2,8 @@
  * @param {number[]} nums
  * @param {number} k
  * @return {number}
+ * 
+ * Time complexty: O(N)
  */
 var longestOnes = function(nums, k) {
     let [right, left, total] = [0,0,0];

@@ -1,6 +1,8 @@
 /**
  * @param {string} s
  * @return {number}
+ * 
+ * Time complexty: O(N)
  */
 var lengthOfLongestSubstring = function(s) {
     let frequenceMap = new Map();
