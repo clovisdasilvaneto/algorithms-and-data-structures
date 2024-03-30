@@ -1,7 +1,7 @@
 const quickSort = (arr) => {
     if(arr.length <= 1) return arr
 
-    const pivot = arr.length - 1;
+    const pivot = Math.floor(arr.length / 2);
     const left = [], right = []
 
     for(let i = 0; i < arr.length; i++) {
@@ -17,7 +17,7 @@ const quickSort = (arr) => {
     if(left.length) sort = [...quickSort(left)]
     
     sort.push(arr[pivot])
-    
+
     if(right.length) sort = [...sort, ...quickSort(right)]
 
     return sort
